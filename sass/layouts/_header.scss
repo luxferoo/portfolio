@@ -1,0 +1,29 @@
+.header {
+    height: 93vh;
+    background-image: linear-gradient( to right bottom, rgba($color-primary-light, .6), rgba($color-primary-dark, .6)), url('../img/hero.jfif');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    @include respond(tab-port) {
+        height: 100vh;
+    }
+    &__logo-box {
+        position: absolute;
+        left: 2rem;
+    }
+    &__logo {
+        color: $color-white;
+        animation: moveInTop 2s;
+        font-size: 60px;
+        font-weight: 400;
+    }
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}

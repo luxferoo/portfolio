@@ -1,0 +1,77 @@
+.card {
+    perspective: 100rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 43rem;
+    transition: all .3s;
+    &__side {
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        /*&--front {
+            background-color: $color-white;
+        }
+        &--back {
+            background-color: blueviolet;
+            transform: rotateY(180deg);
+            &-1 {
+                background-image: linear-gradient(to right bottom, $color-project-1-light, $color-project-1);
+            }
+        }*/
+    }
+    /*&:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }*/
+    &__picture-container {
+        &-picture {
+            width: 8rem;
+            margin-top: 5rem;
+        }
+        height: 19rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        text-align: center;
+        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    }
+    &__heading {
+        font-size: 2rem;
+        font-weight: 300;
+        color: $color-white;
+        position: absolute;
+        text-align: right;
+        z-index: 1;
+        top: 15rem;
+        right: 2rem;
+    }
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .85));
+    }
+    &__details {
+        padding: 2rem;
+        padding-top: 4rem;
+        font-size: 1.4rem;
+        text-align: justify;
+        overflow: hidden;
+        height: 20rem;
+    }
+    &__action {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 15px 0;
+        right: 0;
+        text-align: center;
+        transform: scale(.8);
+    }
+}

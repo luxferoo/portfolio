@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "compile:sass": "node-sass sass/main.scss public/css/style.css --output-style compressed",
+        "start": "live-server --port=3033"
+    },
+    "devDependencies": {
+        "live-server": "^1.2.1",
+        "node-sass": "^4.13.1"
+    }
+}
