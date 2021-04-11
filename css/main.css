@@ -2167,6 +2167,14 @@ h3.comment-reply-title:after {
   margin: 0 0 10px;
 }
 
+.m-text-success {
+  color: green;
+}
+
+.m-bg-success {
+  background-color: rgba(0, 128, 0, 0.05);
+}
+
 .project-general-info .fa {
   color: #9200ee;
   margin-right: 5px;
