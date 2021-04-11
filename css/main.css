@@ -688,9 +688,9 @@ blockquote {
 .section-inner.start-page-full-width .inner-content .fill-block {
   position: relative;
   height: 100%;
-  min-height: 800px;
+  min-height: 600px;
   width: 100%;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1538,6 +1538,7 @@ h3.comment-reply-title:after {
 .portfolio-item-img {
   position: relative;
   overflow: hidden;
+  height: 300px;
 }
 
 .portfolio-grid figure .portfolio-item-img:after {
